@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="./main.js" type="module" defer></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Merriweather&display=swap");
+    </style>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <header><h2>WeatherApp</h2></header>
+
+    <div class="main-weather">
+      <div class="form-container">
+        <input type="text" id="input-field" placeholder="Search Location" />
+        <button type="submit" id="search-btn">Search</button>
+        <button id="unit-btn" class="unit-btn metric">°C</button>
+      </div>
+
+      <div class="current-weather-info day-mode">
+        <div class="name-timezone">
+          <div class="time-info"></div>
+          <h3 class="city-name capitalize"></h3>
+        </div>
+
+        <div class="weather-description">
+          <div class="description"></div>
+          <img class="icon" src="" />
+        </div>
+
+        <div class="temp"></div>
+
+        <div class="min-max-temp">
+          <div class="max day-mode">
+            <div class="title"></div>
+            <div class="value"></div>
+          </div>
+          <div class="min">
+            <div class="title"></div>
+            <div class="value"></div>
+          </div>
+        </div>
+
+        <div class="extra-info">
+          <div class="feels-like">
+            <div class="title"></div>
+            <div class="value"></div>
+          </div>
+          <div class="humidity">
+            <div class="title"></div>
+            <div class="value"></div>
+          </div>
+          <div class="wind">
+            <div class="title"></div>
+            <div class="value"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="five-day-forecast">
+      <div class="forecast-header">
+        <h2 class="forecast-title">Weekly Forecast</h2>
+      </div>
+
+      <div class="forecast-container"></div>
+    </div>
+
+    <template id="template">
+      <div class="forecast-card">
+        <h3 class="day-of-the-week"></h3>
+        <img class="icon-of-the-day" src="" />
+        <div class="average-temp"></div>
+      </div>
+    </template>
+
+    <div class="loading-page">
+        <div id="loader"></div>
+    </div>
+  </body>
+</html>
