@@ -18,7 +18,7 @@ async function getCurrentWeather(cityName, unit){
 }
 
 async function getGeoCode(cityName){
-   const response = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&appid=${API_KEY}`)
+   const response = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&appid=${API_KEY}`)
    if (!response.ok) {
       throw Error(response.status);
    }
