@@ -8,3 +8,5 @@ Weather App created with HTML, CSS and JS.
 <li>Display data in metric or imperial units.</li>
 </ul>
 
+[Live App](https://amandaestevs.github.io/Weather-App/) :point_left:
+
